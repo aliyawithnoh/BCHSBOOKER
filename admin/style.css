@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    all: unset;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #e1ebea;
+}
+
+a{
+    margin: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    color: #a9bfbb;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background-color: #5a6b68;
+    position: absolute;
+    height: 100vh;
+    width: 10rem;
+    border-right: #e3cc89 solid 2px;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+header .bg-image{
+    display: flex;
+    justify-content: flex-end;
+    height: 13rem;
+    width: 100%;
+    background-image:  linear-gradient(to right, #354441c4, #354441c4), url(../AApics/bchs.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    position: inherit;
+    box-shadow: 0 5px 2px #e3cc89;
+}
+
+header h1{
+    position: absolute;
+    top: 140px;
+    font-size: 60px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main h3 {
+    font-size: 2rem;
+    color: #c5b174;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    display: none;
+}
+
+.events-contain{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.event{
+    background-color: #a5d4ca;
+    height: 23rem;
+    width: 20rem;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 5px;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+}
