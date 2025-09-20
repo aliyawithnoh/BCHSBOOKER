@@ -7,6 +7,7 @@
 body{
     all: unset;
     font-family: 'Courier New', Courier, monospace;
+    background-color: #e1ebea;
 }
 
 a{
@@ -36,10 +37,42 @@ header .bg-image{
     background-repeat: none;
     background-size: cover;
     position: inherit;
+    box-shadow: 0 5px 2px #e3cc89;
 }
 
 header h1{
     position: absolute;
     top: 140px;
     font-size: 60px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main h3 {
+    font-size: 2rem;
+    color: #c5b174;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    display: none;
+}
+
+.events-contain{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.event{
+    background-color: #a5d4ca;
+    height: 23rem;
+    width: 20rem;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 5px;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
 }
