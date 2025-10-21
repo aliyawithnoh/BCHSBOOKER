@@ -10,12 +10,53 @@
 <body>
  
     <header>
-        <div class="bg-image">         
-            <a href="#">Login</a>
-            <a href="#">Sign up</a>
-        </div>
-        <h1> Baguio City High School</h1>         
+        <h1 class="nav-title">BCHS Booking</h1>
+        <nav class="navbar">
+            <button class="nav-btn active" data-view="home"></button>
+            <button class="nav-btn " data-view="history"></button>
+        </nav>
     </header>
+
+    <main id="mainApp" class="main-app main-content">
+       <section  class="view active">
+            <section class="leftside">
+                <h2 class="fuctionroom">Funtion Rooms</h2>
+                <div id="roomsList" class="rooms-list">
+                    <!-- Rooms will be insterted with js -->
+                </div>
+
+                <div class="question-bot">
+                    <div class="bot-header">
+                        <h3>Quick Help</h3>
+                    </div>
+                    <div class="bot-content">
+                        <p class="bot-description">Need assistance? Ask me anything!</p>
+                        <div class="quick-questions">
+                            <button class="quick-q-btn" data-question="How do I book?">How do I book?</button>
+                            <button class="quick-q-btn" data-question="What are the rates?">What are the rates?</button>
+                            <button class="quick-q-btn" data-question="Cancellation policy?">Cancellation policy?</button>
+                        </div>
+                        <div class="bot-chat-input">
+                            <input type="text" id="botQuestionInput" placeholder="Ask a question...">
+                            <button id="botAskBtn" class="btn-ask">Ask</button>
+                        </div>
+                        <div id="botResponse" class="bot-response hidden"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-area">
+                <div id="calendarContainer" class="calendar-container">
+                    <div class="empty-state">
+                        <h3>Select a room to view availability</h3>
+                        <p>Choose from one of the rooms on the left to see the calendar and booking options</p>
+                    </div>
+                </div>
+            </section>
+       </section>
+    </main>
+
+        
 
     <main>
        
